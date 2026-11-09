@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sistema musical</title>
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn461PC90ZXh0Pjwvc3ZnPg==">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+    <div class="login-card">
+        <div class="login-header">
+            <h1>🎵 Sistema Musical</h1>
+            <p>Entre com suas credenciais</p>
+        </div>
+
+        <form action="#" method="post">
+
+            <div class="form-group">
+                <label for="usuario">Usuário</label>
+                <input type="text"
+                id="usuario"
+                name="usuario"
+                required
+                autocomplete="username"
+                placeholder="Seu usuário">
+            </div>
+
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password"
+                id="senha"
+                name="senha"
+                required
+                autocomplete="current-password"
+                placeholder="Sua senha">
+            </div>
+
+            <button type="submit" class="btn-primary">Entrar</button>
+        </form>
+
+        <div class="login-hint">
+            <strong>Credenciais de teste:</strong><br>
+            Usuário: <code>admin</code>&nbsp;&nbsp; Senha: <code>123</code>
+        </div>
+
+    </div>
+
+</body>
+</html>
