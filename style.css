@@ -1,4 +1,6 @@
-/* CSS LOGIN */
+/* Variáveis e reset */
+
+/* :root guarda as variáveis. Escrevemos os valores uma única vez */
 :root {
     --primary: #2c3e50;
     --blue: #3498db;
@@ -7,7 +9,7 @@
     --red: #e74c3c;
     --red-dark: #c0392b;
     --bg: #f0f2f5;
-    --radius: 8px;
+    --radius: 8px; /* Arredondamento dos cantos */
 
 
     --surface: #ffffff;
@@ -19,10 +21,12 @@
 
     --font: 'Segoe UI', system-ui, sans-serif;
 }
+
+/* Zera as margens que o navegador coloca sozinho */
 *,*::before, *::after {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Faz a largura já incluir padding e margin */
 }
 body {
     font-family: var(--font);
@@ -74,14 +78,14 @@ textarea, select {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100vh; /* Altura minima */
 }
 .login-card {
     background: var(--surface);
     padding: 2.5rem 2rem;
     border-radius: var(--radius);
     box-shadow: var(--shadow-md);
-    max-width: 400px;
+    max-width: 400px; /* Largura máxima */
 }
 .login-card form {background: none; box-shadow: none;}
 .login-header {text-align: center;}
@@ -91,14 +95,14 @@ textarea, select {
 
 /* CSS DO INDEX */
 .container {
-    max-width: 1200px;
+    max-width: 1200px; /* Largura máxima */
     margin: 0 auto;
     padding: 24px 32px;
 }
 
 .topbar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; /* Alinha os itens no final do eixo do contâiner */
     margin-bottom: 2rem;
 }
 
@@ -218,8 +222,8 @@ th {
     font-size: .82rem;
     font-weight: 600;
     letter-spacing: .04em;
-    text-transform: uppercase;
-    white-space: nowrap;
+    text-transform: uppercase; /* Usada para que o texto apareça com todas as letras maiúsculas */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
 }
 
 tbody tr:last-child td {border-bottom: none;}
